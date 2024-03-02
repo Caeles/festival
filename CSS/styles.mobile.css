@@ -1,0 +1,340 @@
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+p{
+    margin-bottom: 0.6rem;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+h1,h2,h3,h4{
+    font-size: 20px;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+h6{
+   margin:0.5rem 0;
+}
+
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:0.8rem;
+}
+
+h3{
+    font-weight:2rem;
+    font-size:2rem;
+    line-height:2rem;
+
+}
+
+.bold{
+    font-weight: 700;
+}
+
+header{
+    top:0px; 
+    height: 18rem;
+    background-color: black;
+    position:static
+    ;
+
+}
+
+.logo{
+    padding:1.6em 0.6em 0em 0.6em;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+} 
+
+
+nav .nav-items ul {
+    display: flex;
+    flex-direction:column;
+}
+
+
+
+/* Featured Movie */
+.container{
+    background-color: black;
+    min-height:calc(80vh-50px);
+    color:white;
+    
+}
+
+.header_container{
+    height:70vh;
+    width:100%;
+    background-image:url(../Images/path_of_glory.jpg);
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    z-index:1;
+}
+
+.movie_title{
+    color:#ffffff;
+    font-size: 16px;
+    font-family:sans-serif;
+    /* background:linear-gradient(to bottom, rgba(0, 0, 0)0%, rgba(255, 255, 255, 0)100%); */
+}
+
+
+.movie_details{
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.content_container{
+    height:70vh;
+    width:100%;
+    background:linear-gradient(0deg, rgba(0, 0, 0)0%, rgba(255, 255, 255, 0.1)50%);
+    z-index:2;
+
+}
+
+
+.path{
+    width: 300px;
+    color:rgb(255, 255, 255);
+    box-sizing: border-box black;
+    height:300px;
+    margin:5px;
+    border:none;
+    background-color:black;
+    padding:30px; 
+    position:relative;
+    left:2vh;
+    bottom:-210px; 
+}
+
+
+/* accueil */
+.acceuil{
+    height: 25%;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.acceuil_content{
+    max-width:800px;
+    padding:60px 0px 60px 0px;
+    display: block;
+    margin:auto;
+}
+
+
+
+
+/* news */
+
+.news{
+    padding:0rem 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    /* grid-auto-rows: auto; */
+}
+
+
+.article-author{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.article-small{
+    display:flex;
+    flex-direction: column;
+}
+
+.article-small p{
+    margin:0.5rem 0;
+}
+
+.article-small .article-content{
+    grid-column:span 2;
+    max-height: 6rem;
+    overflow: hidden;
+
+
+}
+
+.article-small .article-author{
+    grid-column:span 2;
+    
+}
+
+.article-small .text-hint{
+    grid-column: span 2;
+}
+
+/* ads */
+.ads{
+    padding:2rem 1rem;
+    margin:auto;
+    background-color: #f3f3f3;
+    margin:2rem 0;
+    color:black;
+    display:flex;
+    flex-direction:column;
+}
+
+.ads img{
+    grid-area:img;
+}
+.ads h2{
+    grid-area:h2;
+    font-size:2rem;
+    line-height: 2rem;
+}
+
+.ads p{
+    grid-area:p;
+}
+
+.ads form{
+    grid-area:form;
+}
+
+.ads form input{
+    background-color: rgb(231, 231, 231);
+    border:solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding:1rem 0;
+    margin-right:1rem;
+    outline:0;
+}
+
+/* AGENDA */
+.agenda{
+    margin:0rem ;
+} 
+
+.agenda, .test, .now,.movies, .movie{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.movies .movie h3{
+    margin-left: 0rem;
+    font-size: 20px;    
+    }
+    
+
+.movie-content{
+margin-left:0rem;
+width: 250px;
+}
+
+
+.movies .movie .movie-date{
+    margin-left: 0rem;
+    width: 300px;
+
+    }
+    
+    .movies .movie .notation{
+    margin-left: 0rem;
+    
+    }
+    
+    .movies .movie button{
+        margin-left: 0rem;
+        width:200px;
+        }
+    
+    
+
+    .movies .movie-content{
+        margin-left: 0rem;    
+    }
+    
+    .test{
+        display: flex;
+    }
+
+
+   /* contact */
+
+.contact{
+    padding:60px 0px 60px 0px;
+    min-height:60vh;
+}
+
+.contact-form-container{
+    max-width: 300px;
+    margin:auto;
+}
+
+.contact-form-container form label{
+    display:block;
+    font-weight: 700;
+}
+
+.contact-form-container form input, textarea{
+    display:block;
+    max-width:300px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:3px;
+}
+
+.contact-form-container form textarea{
+padding:50px;
+}
+ 
+    
+/* Footer */
+footer{
+    background-color: rgb(32, 32, 32);
+    color:white;
+    padding:20px 40px;
+    margin-bottom: 0px;
+    line-height:1.5rem;
+}
+
+
+.column-footer{
+    margin-top: 20px;
+}
+
+
+.column-footer ul li a:hover{
+    color:#840032;
+ 
+
+}
+
+footer .columns{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column ul li{
+    list-style: none;
+}
+
+.img_logo{
+margin-bottom: 10px;;
+}
+
+.copyright{
+      padding:5em 0 0 0;
+    text-align: center;
+}
+
+/* Fin du footer */
+

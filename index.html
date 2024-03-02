@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/styles.mobile.css" media="only screen and (max-width:500px)">
     <script src="https://kit.fontawesome.com/b2d7c9ce1f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,6 +61,7 @@
     </section>
 
     <!-- NEWS -->
+
     <section class="news" id="actualites">
             <article>
                 <img src="./Images/news-2.jpeg" alt="bloc-1">
@@ -98,6 +100,7 @@
             </article>
         </section>
 
+
     <!-- END NEWS -->
 
     <!-- ADS -->
@@ -119,8 +122,7 @@
             <div class="movies">
                 <h2 class="underline"> À l'affiche cette semaine
                 </h2>
-
-                <div class="movie">
+                <div class="movie movie_top">
                 <img src="./Images/path_of_glory.jpg" alt="movie-1" class="movie-image">
                 <h3>Les envoyés sur Mars</h3>
                     <p class="movie-content">C'est l'histoire de Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi quasi iste tenetur suscipit illo nostrum! Sapiente veritatis quo officiis...</p>
@@ -129,7 +131,7 @@
                     <button class="btn btn-light">S'inscrire</button>
                 </div>
 
-                <div class="movie">
+                <div class="movie movie_top">
                     <img src="./Images/news-5.jpeg" alt="movie-1" class="movie-image">
                     <h3>Les envoyés sur Mars</h3>
                         <p class="movie-content">C'est l'histoire de Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi quasi iste tenetur suscipit illo nostrum! Sapiente veritatis quo officiis...</p>
@@ -138,7 +140,7 @@
                         <button class="btn btn-light">S'inscrire</button>
                     </div>
 
-                <div class="movie">
+                <div class="movie movie_top">
                     <img src="./Images/news-7.jpeg" alt="movie-1" class="movie-image">
                     <h3>Les envoyés sur Mars</h3>
                         <p class="movie-content">C'est l'histoire de Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi quasi iste tenetur suscipit illo nostrum! Sapiente veritatis quo officiis...</p>
@@ -179,15 +181,12 @@
                     <p class="movie-date">Prochaine publication le 17 mars 2024 à 18h00</p>
                     <p class="notation">Notation:<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                     <button class="btn btn-light">S'inscrire</button>
-                </div>
-
-        
-    </div>
-        
+                </div>       
+        </div>      
         </div>
     </section>
-    <!-- ENDS AGENDA -->
 
+    <!-- ENDS AGENDA -->
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
@@ -201,7 +200,7 @@
                 <input type="email" name="email" id="email">
                 <label class="my-20" for="question">Questions et Remarques</label>
                 <textarea name="question" id="question" ></textarea>
-                <button class="btn btn-dark my-20">SOUMETTRE</button>
+                <button class="btn btn-dark my-20 btn-contact">SOUMETTRE</button>
             </form>
         </div>
     </section>
@@ -248,6 +247,7 @@
         <p>Copyright  ©  2024 - Les Films De Plein Air</p>
     </div>
     </footer>
+    
 </div>
 </div>
 </body>
